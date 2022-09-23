@@ -1,0 +1,115 @@
+* 
+    margin: 0
+    padding: 0
+
+$size: 14px
+$sizes: 15px, 12px, 10px, 8px
+$color: orange
+
+#up
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    background-color: rgb(33, 33, 33)  
+    color: orange
+    border-bottom: 1px solid $color
+    font-family: Arial, Helvetica, sans-serif
+
+.arriba
+    padding: 10px
+
+.si
+    display: flex
+
+#ola1
+    background-color: hsl(0, 0%, 7%)
+    font-size: 17px
+    padding-left: 5px
+    margin-top: 8px
+    color: white
+    width: 500px
+    height: 35px
+    border: 2px solid $color
+    border-width: 1px
+    margin-bottom: 10px
+
+#ola1:focus
+    border-color: $color
+
+
+#down
+    background-color: rgb(24, 24, 24)
+    height: 600vh
+    font-family: Arial, Helvetica, sans-serif
+
+
+#down
+    color: white
+    
+
+.imagenes
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 20px
+    padding: 20px
+
+.col
+    display: flex
+    flex-direction: column
+    align-items: center
+    border: 5px solid $color
+   
+.boton
+    background-color: purple
+    border-radius: 40%
+    padding: 10px
+    color: white
+    align-items: right
+
+.boton:hover
+    background-color: violet
+    
+
+@media only screen and (max-width: 992px)
+    .imagenes
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+    #ola1
+        width: 400px
+
+@media only screen and (max-width: 768px)
+    .imagenes
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+
+    #up
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+    
+    #ola1
+        width: 300px
+
+@media only screen and (max-width: 600px)
+    .imagenes
+        display: grid
+        grid-template-columns: repeat(1, 1fr)
+
+    #up
+        display: flex
+        flex-direction: row
+        justify-content: space-evenly
+    
+    #ola1
+        width: 200px
+        height: 20px
+
+    #up
+        font-size: 10px
+
+
+.boton2
+    display: flex
+    justify-content: right
+    width: 100%
